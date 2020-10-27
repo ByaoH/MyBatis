@@ -21,6 +21,9 @@ public class UserMapperTest {
 
     @Test
     public void getUserById(){
-
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        System.out.println(userMapper.getUserById(1));
+        sqlSession.close();
     }
 }
