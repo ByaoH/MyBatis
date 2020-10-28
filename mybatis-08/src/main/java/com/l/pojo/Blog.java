@@ -21,7 +21,7 @@ public class Blog{
     /**
      * 创建时间
      */
-    private Date createTime;
+    private Date createTime;//属性名和字段名不一致 可以在设置里打开
 
     /**
      * 浏览量
